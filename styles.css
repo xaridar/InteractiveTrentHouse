@@ -15,14 +15,10 @@ a {
 body {
     background-image: url('images/bg.png');
     backdrop-filter: blur(3px);
-    padding: 2em 0 8em 0;
+    padding: 2em 0 0 0;
 }
 
 footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: 1em 2em;
     margin-top: 2em;
     background-color: rgb(0 0 0 / 0.4);
@@ -72,18 +68,26 @@ main {
     overflow: visible;
     width: 2em;
     background-color: white;
-    position: relative;
+    position: absolute;
+    border-radius: 0.3em;
 }
 
 .desc {
     height: 2em;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     font-weight: bold;
+    width: calc(100% - 3em);
+    margin-left: 3em;
 }
 
 .detail {
     margin: 1em 0;
+}
+
+.detail > img {
+    width: 100%;
 }
 
 .item {
@@ -115,11 +119,11 @@ main {
     font-size: 3em;
 }
 
-.item input[type='checkbox'] ~ .right .detail {
+.item input[type='checkbox'] ~ .more .detail {
     display: none;
 }
 
-.item input[type='checkbox']:checked ~ .right .detail {
+.item input[type='checkbox']:checked ~ .more .detail {
     display: block;
 }
 
@@ -127,6 +131,11 @@ main {
     cursor: pointer;
     position: absolute;
     inset: 0;
+    border-radius: inherit;
+}
+
+.more {
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {
