@@ -139,6 +139,10 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+    :root {
+        font-size: 0.7rem;
+    }
+
     main {
         width: 100%;
     }
