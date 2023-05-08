@@ -86,8 +86,8 @@ main {
     margin: 1em 0;
 }
 
-.detail > img {
-    width: 100%;
+.detail img {
+    width: 60%;
     margin-block: 1rem;
 }
 
@@ -144,6 +144,13 @@ main {
     border-radius: inherit;
 }
 
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 .more {
     width: 100%;
 }
@@ -155,5 +162,9 @@ main {
 
     main {
         width: 100%;
+    }
+
+    .layout {
+        flex-direction: row;
     }
 }
