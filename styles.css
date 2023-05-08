@@ -88,6 +88,16 @@ main {
 
 .detail > img {
     width: 100%;
+    margin-block: 1rem;
+}
+
+.detail > h1 {
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.detail span {
+    font-weight: bold;
 }
 
 .item {
