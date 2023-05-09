@@ -181,4 +181,8 @@ span[id$='answer'] {
     .ans-ctr {
         margin: 0;
     }
+
+    .detail img {
+        width: 85%;
+    }
 }
