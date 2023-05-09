@@ -90,6 +90,10 @@ main {
     margin-left: 3em;
 }
 
+.detail {
+    margin-top: 1em;
+}
+
 .detail img {
     width: 60%;
     margin-block: 1rem;
@@ -174,7 +178,7 @@ span[id$='answer'] {
         width: 100%;
     }
 
-    .layout {
-        flex-direction: row;
+    .ans-ctr {
+        margin: 0;
     }
 }
