@@ -56,6 +56,13 @@ main {
     margin-bottom: 1rem;
 }
 
+.ans-ctr {
+    cursor: default;
+    z-index: 2;
+    align-self: self-start;
+    margin: 0 2em;
+}
+
 .checkbox {
     display: flex;
     flex-direction: row;
@@ -70,6 +77,7 @@ main {
     background-color: white;
     position: absolute;
     border-radius: 0.3em;
+    pointer-events: none;
 }
 
 .desc {
@@ -80,10 +88,6 @@ main {
     font-weight: bold;
     width: calc(100% - 3em);
     margin-left: 3em;
-}
-
-.detail {
-    margin: 1em 0;
 }
 
 .detail img {
@@ -108,11 +112,11 @@ main {
     position: relative;
 }
 
-.item input[type='checkbox'] {
+.item .checkbox > input[type='checkbox'] {
     display: none;
 }
 
-.item input[type='checkbox']:checked ~ .box::after {
+.item .checkbox > input[type='checkbox']:checked ~ .box::after {
     opacity: 1;
 }
 
@@ -129,15 +133,15 @@ main {
     font-size: 3em;
 }
 
-.item input[type='checkbox'] ~ .more .detail {
+.item .checkbox > input[type='checkbox'] ~ .more .detail {
     display: none;
 }
 
-.item input[type='checkbox']:checked ~ .more .detail {
+.item .checkbox > input[type='checkbox']:checked ~ .more .detail {
     display: block;
 }
 
-.item label {
+.item > label {
     cursor: pointer;
     position: absolute;
     inset: 0;
@@ -153,6 +157,12 @@ main {
 
 .more {
     width: 100%;
+}
+
+span[id$='answer'] {
+    margin: 1em auto;
+    text-align: center;
+    display: block;
 }
 
 @media screen and (max-width: 600px) {
