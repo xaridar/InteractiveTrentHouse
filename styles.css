@@ -61,6 +61,11 @@ main {
     z-index: 2;
     align-self: self-start;
     margin: 0 2em;
+    width: 100%;
+}
+
+.ans-ctr label {
+    display: block;
 }
 
 .checkbox {
