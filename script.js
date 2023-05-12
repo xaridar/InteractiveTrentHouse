@@ -34,3 +34,8 @@ document.querySelectorAll('input[type="checkbox"].answer').forEach((e) => {
         }
     });
 });
+
+const resetAnswers = () => {
+    document.querySelectorAll('.answer').forEach((e) => (e.checked = false));
+    document.querySelectorAll('[id$="answer"]').forEach((e) => (e.textContent = ''));
+};
