@@ -2,7 +2,7 @@ const answers = {
     bread: ['manchet'],
     seafood: ['fish', 'clams', 'oysters'],
     wax: ['beeswax'],
-    peas: 'west-africa',
+    peas: ['west-africa'],
     greens: ['lettuce', 'watercress'],
 };
 
