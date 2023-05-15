@@ -14,7 +14,7 @@ a {
 
 body {
     background-image: url('images/bg.png');
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px) contrast(80%);
     background-size: cover;
     padding: 2em 0 0 0;
 }
